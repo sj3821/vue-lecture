@@ -8,6 +8,8 @@
     <br><br><br>
     <button type="button" @click="childFunc" ref="child_btn">자식에 있는 클릭</button>
 
+    <h1>{{msg}}</h1>
+
 </div>
 </template>
 <script>
@@ -33,7 +35,9 @@ export default{
     components:{},
     data(){
         return{
-            sampleData:''
+            sampleData:'',
+            msg:'자식에 있던 메세지',
+            msg1:'자식 컴포넌트로부터 보내는 메세지'
         };
     },
     setup(){},

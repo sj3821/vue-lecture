@@ -33,7 +33,8 @@ export default{
     methods:{
         callChildFunc(){
             // this.$refs.child_component.$refs.child_btn.click(); // 객체 접근 $refs 사용
-            this.$refs.child_component.childFunc(); //함수접근시에는 그냥 함수만 쓰면 됨
+            // this.$refs.child_component.childFunc(); //함수접근시에는 그냥 함수만 쓰면 됨
+            this.$refs.child_component.msg ='부모컴포넌트에서 변경한 메세지';
         }
     }
 }
