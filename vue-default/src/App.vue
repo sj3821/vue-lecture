@@ -20,6 +20,8 @@
     <router-link to='/saveView'>SaveView</router-link>
     <br>
     <router-link to='/serverData'>ServerData</router-link>
+    <br>
+    <router-link to='/componentExam'>ComponentExam</router-link>
   <router-view/>
   </div>
 </template>

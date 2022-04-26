@@ -91,6 +91,11 @@ const routes = [
     path: '/serverData',
     name: 'ServerData',
     component: () => import('../views/ServerData.vue')
+  },
+  {
+    path: '/componentExam',
+    name: 'ComponentExam',
+    component: () => import('../views/ComponentExam.vue')
   }
 ]
 
