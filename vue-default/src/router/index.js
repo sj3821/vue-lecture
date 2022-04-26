@@ -78,9 +78,19 @@ const routes = [
     component: () => import('../views/WatchExam.vue')
   },
   {
-    path: '/searchAndSaveView',
-    name: 'SearchAndSaveView',
-    component: () => import('../views/SearchAndSaveView.vue')
+    path: '/saveView',
+    name: 'SaveView',
+    component: () => import('../views/SaveView.vue')
+  },
+  {
+    path: '/searchView',
+    name: 'SearchView',
+    component: () => import('../views/SearchView.vue')
+  },
+  {
+    path: '/serverData',
+    name: 'ServerData',
+    component: () => import('../views/ServerData.vue')
   }
 ]
 

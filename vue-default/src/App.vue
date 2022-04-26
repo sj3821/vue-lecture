@@ -16,8 +16,10 @@
     <router-link to='/computedExam'>ComputedExam</router-link> | 
     <router-link to='/watchExam'>WatchExam</router-link>
     <br>
-    <router-link to='/searchAndSaveView'>SearchAndSaveView</router-link>
-
+    <router-link to='/searchView'>SearchView</router-link> | 
+    <router-link to='/saveView'>SaveView</router-link>
+    <br>
+    <router-link to='/serverData'>ServerData</router-link>
   <router-view/>
   </div>
 </template>
