@@ -1,12 +1,6 @@
 import axios from 'axios';
 
 export default {
-    mounted() {  // mixin의 mounted가 먼저 실행, 그 이후 mixin으로 공통함수를 호출한 페이지의 mounted를 실행
-        console.log('믹스인 mounted()')
-    },
-    unmounted() {
-        
-    },
     methods: {
         async $api(url, method, data){ // async-await 비동기방식 통신 :: 서버로 호출을 하고 데이터를 받을 때까지 대기를 한 후에 완료가 되면 그 다음 코드를 실행
             return (await axios({

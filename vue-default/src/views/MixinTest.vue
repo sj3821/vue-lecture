@@ -23,12 +23,13 @@
 </div>
 </template>
 <script>
-import ApiMixin from '../api.js';
+//import ApiMixin from '../api.js';
 import MoniteringMixin from '../monitering.js';
 
 export default{ 
     name:'MixinTest',
-    mixins:[ApiMixin, MoniteringMixin], //공통함수 import한 것들 배열로 선언하면 사용가능
+    //  mixins:[ApiMixin, MoniteringMixin], //공통함수 import한 것들 배열로 선언하면 사용가능
+    mixins:[MoniteringMixin], //공통함수 import한 것들 배열로 선언하면 사용가능
     components:{},
     data(){
         return{
@@ -48,7 +49,8 @@ export default{
     unmounted(){},
     methods:{
         async getProductList(){
-            this.productList = await this.$callAPI('https://63229e79-1030-47bb-a15c-0753d3b595be.mock.pstmn.io/productList','get',{}) // mixin으로 가져온? 함수는 앞에 $를 prefix로 붙여서 사용한다
+            // this.productList = await this.$callAPI('https://63229e79-1030-47bb-a15c-0753d3b595be.mock.pstmn.io/productList','get',{}) // mixin으로 가져온? 함수는 앞에 $를 prefix로 붙여서 사용한다
+            this.productList = await this.$api('https://63229e79-1030-47bb-a15c-0753d3b595be.mock.pstmn.io/productList','get',{}) // mixin으로 가져온? 함수는 앞에 $를 prefix로 붙여서 사용한다
             console.log(this.productList);
         } 
     }
