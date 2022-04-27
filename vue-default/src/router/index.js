@@ -96,7 +96,22 @@ const routes = [
     path: '/componentExam',
     name: 'ComponentExam',
     component: () => import('../views/ComponentExam.vue')
-  }
+  },
+  {
+    path: '/slot',
+    name: 'SlotUseModalLayout',
+    component: () => import('../views/SlotUseModalLayout.vue')
+  },
+  {
+    path: '/provideinject',
+    name: 'ProvideInjectChildChild',
+    component: () => import('../views/ProvideInjectChildChild.vue')
+  },
+  {
+    path: '/mixin',
+    name: 'MixinTest',
+    component: () => import('../views/MixinTest.vue')
+  } 
 ]
 
 const router = createRouter({

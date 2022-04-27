@@ -22,6 +22,12 @@
     <router-link to='/serverData'>ServerData</router-link>
     <br>
     <router-link to='/componentExam'>ComponentExam</router-link>
+    <br>
+    <router-link to='/slot'>Slot</router-link>
+    <br>
+    <router-link to='/provideinject'>ProvideInject</router-link>
+    <br>
+    <router-link to='mixin'>MixinTest</router-link>
   <router-view/>
   </div>
 </template>
